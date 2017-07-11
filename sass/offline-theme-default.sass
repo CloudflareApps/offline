@@ -19,7 +19,7 @@ $darkYellow: #7c6d1f
 +keyframes-offline-rotation
 
 .offline-ui
-    +border-radius(4px)
+    border-radius: 4px
     font-family: "Helvetica Neue", sans-serif
     padding: 1em
     top: 1em
@@ -28,7 +28,7 @@ $darkYellow: #7c6d1f
     overflow: hidden
 
     @media (max-width: 38em)
-        +border-radius(0)
+        border-radius: 0
         top: 0
 
     .offline-ui-content:before
@@ -64,7 +64,7 @@ $darkYellow: #7c6d1f
 
             &:after
                 +offline-animation(offline-rotation .7s linear infinite)
-                +border-radius(50%)
+                border-radius: 50%
                 content: " "
                 display: block
                 position: absolute

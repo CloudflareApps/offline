@@ -30,7 +30,7 @@
   "options": {
     "properties": {
       "indicator": {
-        "title": "Always on",
+        "title": "Always show indicator",
         "description": "When checked, a connectivity indicator will always be present on the bottom-left corner of the page. When unchecked, Offline will only show a message when there are connectivity issues.",
         "type": "boolean",
         "default": false
@@ -78,19 +78,18 @@
         "title": "Theme",
         "description": "Describes the look and feel of the message.",
         "type": "string",
+        "format": "radios",
         "enum": [
-          "default",
+          "slide",
           "dark",
-          "chrome",
-          "slide"
+          "chrome"
         ],
         "enumNames": {
-          "default": "Default",
+          "slide": "Light",
           "dark": "Dark",
-          "chrome": "Chrome",
-          "slide": "Slide"
+          "chrome": "Chrome"
         },
-        "default": "default"
+        "default": "slide"
       }
     }
   }
